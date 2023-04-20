@@ -23,10 +23,14 @@ let words = [
     //  let out = words.map(conv);
     //  console.log(out);
 // - Create a new array that only contains word with atleast one vowel.
-    // doubt
-    //   let v = ['a','e','i','o','u'];
+ 
     //   function vowel(val) {
-    //     return val.contains(v);
+    //     return val.includes('a') || 
+    //            val.includes('e') || 
+    //            val.includes('i') ||
+    //             val.includes('o') || 
+    //             val.includes('u');
+               
     //   }
     //  let vowl = words.filter(vowel);
 
@@ -34,13 +38,26 @@ let words = [
     // console.log(words.indexOf("rhythm"));
 
 // - Create a new array that contians words not starting with vowel.
-      function notVowel(str) {
-        return str.contains('a');
-      }
-    let out = words.filter(notVowel);
-    console.log(out);
+    //  function vowel(val) {
+    //     return val[0]  != ('a') &&
+    //             val[0] != ('e') &&
+    //             val[0]!= ('i') &&
+    //             val[0]!= ('o') &&
+    //             val[0] != ('u');
+               
+    //   }
+    //  let vowl = words.filter(vowel);
 // - Create a new array that contianse words not ending with vowel
-     // doubt
+// function vowel(val) {
+//   return val[val.length - 1]  != ('a') &&
+//         val[val.length - 1] != ('e') &&
+//         val[val.length - 1]!= ('i') &&
+//         val[val.length - 1]!= ('o') &&
+//         val[val.length - 1] != ('u');
+         
+// }
+// let vowl = words.filter(vowel);
+
 let numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 // - Create a sumArray function that takes an array of number as a parameter, and calculate the sum of all its numbers
@@ -110,10 +127,12 @@ let strings = [
 ];
 
 // - Write a function averageWordLength that receives an array of words2 and calculate the average length of the words.
-//   let total = 0;
 // function averageLength(str){
-//     total += str.length;
-//      return total;
+    
+//      return str.length;
 // }
-// let out = strings.forEach(averageLength);
-// console.log(total/10);
+// let out = strings.map(averageLength);
+// let total = out.reduce((acc,iv)=> {
+//       return (acc + iv);
+//  });
+//  console.log(total/out.length);
