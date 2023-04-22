@@ -2,35 +2,93 @@
 
 function countAllPeople() {
   // your code goes here
+  // let sum = 0;
+  // for (let  house of got.houses){
+  //   for( let peoples of house.people){
+  //      console.count(peoples.name.length);
+  //   }
+    
+  // }
+
 }
 
 function peopleByHouses() {
   // your code goes here
-}
+//   for (let  house of got.houses){
+//      console.log(house.people);
+//     }
+// }
 
+}
 function everyone() {
   // your code goes here
+  //   for (let  house of got.houses){
+  //   for( let peoples of house.people){
+  //      console.log(peoples.name);
+  //   }
+    
+  // }
+
 }
 
 function nameWithS() {
   // your code goes here
+//       let names = [];
+//       for (let  house of got.houses){
+//     for( let peoples of house.people){
+//         names.push(peoples.name);  
+//     }
+    
+//   }
+//       console.log(names.filter((arr) => arr.includes('s') || arr.includes('S')));
 }
 
 function nameWithA() {
   // your code goes here
+  //       let names = [];
+  //     for (let  house of got.houses){
+  //   for( let peoples of house.people){
+  //       names.push(peoples.name);  
+  //   }
+    
+  // }
+  //     console.log(names.filter((arr) => arr.includes('a') || arr.includes('A')));
+
 }
 
 function surnameWithS() {
   // your code goes here
+//   let names = [];
+//   for (let  house of got.houses){
+// for( let peoples of house.people){
+//     names.push(peoples.name);  
+// }
+ 
+// }
+//   console.log(names.slice(',')); //doubt slice
 }
 
 function surnameWithA() {
   // your code goes here
+  //doubt slice
 }
 
 function peopleNameOfAllHouses() {
   // your code goes here
+   let houseNames = {};
+    let names = [];
+  for (let  house of got.houses){
+    for( let peoples of house.people){
+    names.push(peoples.name); 
+    houseNames[house.name] = names.slice(':');
+    
+    }
+    
 }
+console.log(houseNames); 
+}
+ 
+
 
 // Testing your result after writing your function
 console.log(countAllPeople());
