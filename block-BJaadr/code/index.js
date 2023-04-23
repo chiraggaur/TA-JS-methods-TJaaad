@@ -2,39 +2,84 @@
 
 function countAllPeople() {
   // your code goes here
-  got.houses.reduce((acc,cv)=>{
-    acc + cv.people.reduce(()=> acc + cv.people.length);
-    return acc;
-  });
+//   function calc (acc,cv){
+//     acc = acc + cv.people.length;
+//     return acc;
+//   }
+//  return  got.houses.reduce(calc,0);
    
 }
 
 function peopleByHouses() {
   // your code goes here
+  // function names(acc,house){
+  //   acc[house.name] = house.people.length;
+  //  return acc;
+  // }
+  // return  got.houses.reduce(names,{});
 }
 
 function everyone() {
   // your code goes here
+  //  function names(acc,house){
+
+  //    acc = acc.concat(house.people.map((p) => p.name)); 
+  //    return acc;
+  //  }
+  // return  got.houses.reduce(names,[]);
 }
 
 function nameWithS() {
   // your code goes here
+//   function names(acc,house){
+
+//     acc = acc.concat(house.people.map((p) => p.name).filter((name) => name.toLowerCase().includes('s'))); 
+//     return acc;
+//   }
+//  return  got.houses.reduce(names,[]);
+
 }
 
 function nameWithA() {
   // your code goes here
+//   function names(acc,houses){
+//     acc = acc.concat(houses.people.map((p) => p.name).filter((names) => names.toLowerCase().includes('a')));
+//     return acc;
+//  };
+
+//  return  got.houses.reduce(names,[]);
+
+
 }
 
 function surnameWithS() {
   // your code goes here
+//     function names(acc,houses){
+//     acc = acc.concat(houses.people.map((p) => p.name).filter((names) => names.split(' ')[1].toLowerCase().includes('s')));
+//     return acc;
+//  };
+
+//  return  got.houses.reduce(names,[]);
+
 }
 
 function surnameWithA() {
   // your code goes here
+//   function names(acc,houses){
+//     acc = acc.concat(houses.people.map((p) => p.name).filter((names) => names.split(' ')[1].toLowerCase().includes('a')));
+//     return acc;
+//  };
+
+//  return  got.houses.reduce(names,[]);
 }
 
 function peopleNameOfAllHouses() {
   // your code goes here
+  //  function names(acc,house){
+  //     acc[house.name] =  house.people.map((p) => p.name);
+  //     return acc;
+  //  }
+  // return got.houses.reduce(names,{});
 }
 
 // Testing your result after writing your function
